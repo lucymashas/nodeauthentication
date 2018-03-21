@@ -1,0 +1,72 @@
+body{
+  font-family: 'Karma', serif;
+}
+header {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.9);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#e6ffffff',GradientType=0 );
+  position: relative;
+  z-index: 20;
+  -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.35), 0px -1px 1px rgba(0,0,0,.15);
+  -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.35), 0px -1px 1px rgba(0,0,0,.15);
+  box-shadow: 0px 1px 1px rgba(0,0,0,.35), 0px -1px 1px rgba(0,0,0,.15);
+}
+@media (min-width: 1200px){}
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1170px;
+}
+.navbar, .navbar-inner, .nav, .navbar-inverse {
+  background: none !important;
+  filter: none !important;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0px;
+  margin: 0;
+}
+.navbar-inverse .navbar-brand {
+  color: #2F5F9C;
+}
+/* title {
+  font-family: "Droid Sans" !important;
+  text-shadow: 1px 1px 0px #fff;
+  padding: 10px 20px 5px 20px;
+  font-size: 32px;
+} */
+#selection {
+  background: url(../img/bg-wrapper.jpg);
+  position: relative;
+  z-index: 1;
+  /* height: 100px; */
+  margin-top: -90px;
+  padding-top: 80px;
+}
+#selection-inner {
+  padding: 15px 0px 15px 50px;
+}
+.buttons {
+  font-size: 14px;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+#wrapper {
+	background: url(../img/bg-wrapper.jpg);
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+		    box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+}
+.content {
+	padding: 50px;
+	background: #fff;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+		    box-shadow: 0px 1px 1px rgba(0,0,0,.35);
+}
+.thumbnail{
+  padding: 6px 10px 6px 10px;
+  width: 100%;
+  border: 1px solid #9d9d9d;
+  background-color: white;
+}

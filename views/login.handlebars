@@ -1,0 +1,47 @@
+{{>bkgd}}
+<h1>{{title}}</h1>
+<div id="container">
+      <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <div class="panel pinfo">
+              <div class="panel-heading">
+                  <div class="row">
+							      <div class="col-xs-6">
+								      <a href="#" class="active" id="login-form-link">Login</a>
+							      </div>
+							    <div class="col-xs-6">
+								      <a href="/register" id="register-form-link">Not A Member? Register Now</a>
+							    </div>
+						    </div>
+              </div>     
+                  {{#if errors}}
+                    {{#each errors}}
+                    <div id="login-alert" class="alert alert-danger col-sm-12">
+                      {{this.msg}}
+                    </div>
+                    {{/each}}
+                   {{/if}}
+                  <div style="padding-top:30px" class="panel-body">
+      
+                  
+                                  
+                  <form action = "/login" method = "POST">  
+                      
+                      <div class="input-group loginpd">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                          <input type ="text" name="email" class="form-control" placeholder="Email"></input>
+                      </div> 
+                      <div class="input-group loginpd">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input type ="text" name="password" class="form-control" placeholder="Password"></input>
+                      </div>                        
+                                      
+                     
+                      <div class="form-group loginpd">
+                          <!-- Button -->
+                          <div class="col-sm-12 controls">
+                              <button type="submit" class="btn btn-success btn-action" id="text-enter-button">Submit</button>
+                          </div>
+                      </div>
+                  </form>     
+      
+          </div>                     
